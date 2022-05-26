@@ -18,7 +18,7 @@ rl.on('line', (input) => {
         console.log("That's all. Thank you!");
         rl.close();
     }
-    else fs.appendFile(curPath, input+'\n, (err) => {
+    else fs.appendFile(curPath, input + '\n', (err) => {
         if (err) {
             return console.log(err);
         };
